@@ -12,7 +12,7 @@
     --color-fondo: #f8f9fa;
     --color-primario: #0466c8;
     --color-secundario: #d9d3d3;
-    --color-logo: #0101ff;
+    --color-logo: #ff0000;
     --fuente-grande: 3.0rem;
     --fuente-p: 1rem;
 }
@@ -106,7 +106,7 @@ section{
     margin-bottom: 7px;
 }
 .contenedor h5{
-    color: var(--color-primario);
+    color: blue;
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 4px;
