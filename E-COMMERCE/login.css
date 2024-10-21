@@ -42,7 +42,7 @@ header{
      
 }
 .logo{
-    color: var(--color-fondo);
+    color: blue;
     font-size: 30px;
     user-select: none;
     cursor: pointer;   
