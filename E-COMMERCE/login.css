@@ -79,7 +79,7 @@ header{
 .navegacion a:hover{
     transform: scaleX(1);
     transform-origin: left;
-    color: var(--color-logo);
+    color: blue;
 }
 .fondo{
     position: relative;
