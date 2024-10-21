@@ -42,7 +42,7 @@ header{
      
 }
 .logo{
-    color: blue;
+    color: var(--color-fondo);
     font-size: 30px;
     user-select: none;
     cursor: pointer;   
@@ -52,7 +52,7 @@ header{
 }
 .logo i{
     vertical-align: middle;
-    color: var(--color-logo);
+    color: blue;
     font-size: 27px;
     margin-right: 5px;
 }
