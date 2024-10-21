@@ -161,15 +161,6 @@ section{
     max-width: 500px;
     margin-bottom: 3rem;
 }
-.cart{
-    display: inline-block;
-    padding: 10px 25px;
-    border-radius: 5px;
-    font-size: 30px;
-    font-weight: 500;
-    margin-right: 30px;
-    cursor: pointer;
-}
 .nav-btn{
     display: inline-block;
     padding: 10px 25px;
