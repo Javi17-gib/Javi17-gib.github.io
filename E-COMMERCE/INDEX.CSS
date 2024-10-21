@@ -146,7 +146,7 @@ section{
     cursor: pointer;
 }
 .contenedor img{
-    max-width: 100%;
+    max-width: 120%;
     height: 100px;
 }
 .contenedor h3{
