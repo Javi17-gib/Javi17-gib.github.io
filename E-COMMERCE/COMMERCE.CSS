@@ -86,7 +86,7 @@ body.color{
 section{
     padding: 0 10%;
 }
-.contenedor1{
+.contenedor{
     background-color: var(--color-secundario);
     padding: 25px 40px;
     border-radius: 1rem;
