@@ -13,15 +13,26 @@
 
 <body class="d-flex">
     <!--sidebar-->
-    <aside class="d-flex" style="width: 18%;">
-        <div class="bg-dark text-white p-3 vh-100 w-100">
+    <aside class="d-flex" style="width: 15%;">
+        <div class="bg-dark text-white p-2 vh-100 w-100">
             <h2 class="text-center">E-COMMERCE</h2>
             <nav>
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a href="" class="nav-link text-white"><i
+                    <li class="nav-item"><a href="../admin/Admin.html" class="nav-link text-white"><i
                                 class="bi bi-house-fill"></i>&nbsp;&nbsp;&nbsp;Inicio</a></li>
-                    <li class="nav-item"><a href="" class="nav-link text-white"><i
+                    <li class="nav-item"><a href="../users/User.html" class="nav-link text-white"><i
                                 class="bi bi-person-fill"></i>&nbsp;&nbsp;&nbsp;Usuarios</a></li>
+                    <li class="nav-item"><a href="../PRODUCTOS/Productos.html" class="nav-link text-white"><i
+                                class="bi bi-bag-check-fill"></i>&nbsp;&nbsp;&nbsp;Productos</a></li>
+                    <li class="nav-item"><a href="../stock/stock.html" class="nav-link text-white"><i
+                                class="bi bi-bag-check-fill"></i>&nbsp;&nbsp;&nbsp;Stock</a></li>
+                    <li class="nav-item"><a href="../envios/envios.html" class="nav-link text-white"><i
+                                class="bi bi-airplane-fill"></i>&nbsp;&nbsp;&nbsp;Envios</a></li>
+                    <li class="nav-item"><a href="../envios/envios.html" class="nav-link text-white"><i
+                                class="bi bi-chat-left-text-fill"></i>&nbsp;&nbsp;&nbsp;Comentarios</a></li>
+                                <li class="nav-item"><a href="../pedidos/pedidos.html" class="nav-link text-white"><i
+                                    class="bi bi-card-checklist"></i>&nbsp;&nbsp;&nbsp;Pedidos</a></li>
+                  
                 </ul>
             </nav>
         </div>
@@ -48,7 +59,8 @@
                                 </button>
                             </li>
                             <li class="navbar-item dropdown mx-1">
-                                <img style="width: 40px; height: 40px; border-radius: 50%;" src="./descarga.jpg" alt="">
+                                <img style="width: 40px; height: 40px; border-radius: 50%;" src="../img/descarga.jpg"
+                                    alt="">
 
                             </li>
                             <li class="navbar-item dropdown">
@@ -56,13 +68,15 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">Benito juárez</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                                     <li>
-                                        <a href="" class="dropdown-item"> <i class="bi bi-person-fill"></i>&nbsp;&nbsp;&nbsp;Perfil</a>
+                                        <a href="" class="dropdown-item"> <i
+                                                class="bi bi-person-fill"></i>&nbsp;&nbsp;&nbsp;Perfil</a>
                                     </li>
                                     <li>
                                         <hr class="dropdown-divider" />
                                     </li>
                                     <li>
-                                        <a href="" class="dropdown-item"> <i class="bi bi-box-arrow-in-left"></i>&nbsp;&nbsp;&nbsp;Cerrar Sesion</a>
+                                        <a href="../LOGIN/login.html" class="dropdown-item"> <i
+                                                class="bi bi-box-arrow-in-left"></i>&nbsp;&nbsp;&nbsp;Cerrar Sesion</a>
                                     </li>
                                 </ul>
                             </li>
@@ -75,8 +89,90 @@
 
         <section class="comtainer mt-4 p-4">
             <h4>Bienvenido de nuevo</h4>
+            <!--STAT-->
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" style="height: 100px;">
+                        <div class="card-body">
+                            <label for="">
+                                <i class="bi bi-cash-coin" style="color: rgb(0, 0, 0);"></i>
+                                TOTAL DE INGRESOS MENSUALES
+                            </label>
+                            <H5 class="h4 text-center">$456,000.00</H5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="height: 100px;">
+                        <div class="card-body">
+                            <label for="">
+                                <i class="bi bi-person-circle" style="color: rgb(0, 0, 0);"></i>
+                                USUARIOS ACTIVOS
+                            </label>
+                            <H5 class="h4 text-center">18,498</H5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="height: 100px;">
+                        <div class="card-body">
+                            <label for="">
+                                <i class="bi bi-cash-coin" style="color: rgb(0, 0, 0);"></i>
+                                USUARIOS POR PAGAR (CREDITO)
+                            </label>
+                            <H5 class="h4 text-center">456</H5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="height: 100px;">
+                        <div class="card-body">
+                            <label for="">
+                                <i class="bi bi-bag-check-fill" style="color: rgb(0, 0, 0);"></i>
+                                TOTAL VENTAS MENSUALES
+                            </label>
+                            <H5 class="h4 text-center">$250,000.00</H5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--STAT-->
+
+            <!--CHARTS-->
+            <div class="row mt-4">
+                <div class="col-6">
+                    <div class="card" style="height: 300px;">
+                        <div class="card-header">
+                            INGRESOS POR MES
+                        </div>
+
+                        <div class="card-body">
+                            <canvas id="CHARTINGRESOS"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card" style="height: 300px;">
+                        <div class="card-header">
+                            POR CATEGORIA
+                        </div>
+
+                        <div class="card-body" style="width: 280px">
+                            <canvas id="CHARTCATEGORIAS"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!--CHARTS-->
+
+
+
+
+
         </section>
-    
+
     </main>
     <!--Main Content-->
 
@@ -85,7 +181,11 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/SCRIP.JS"></script>
 </body>
 
 </html>
