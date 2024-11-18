@@ -52,6 +52,7 @@ header{
     display: flex; 
     align-items: center;
     text-decoration: none;  
+    
 }
 .listanav a{
     font-size: var(--fuente-p);
