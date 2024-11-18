@@ -3,10 +3,10 @@ const ctx1 = document.getElementById('CHARTCATEGORIA1');
   new Chart(ctx1, {
     type: 'pie',
     data: {
-      labels: ['CHIHUAHUA', 'SONORA', 'CULIACAN', 'MEXICO', 'MONTEREY', 'DURANGO', 'VERACRUZ'],
+      labels: ['CHIHUAHUA', 'SONORA', 'CULIACAN', 'MEXICO', 'MONTEREY', 'DURANGO'],
       datasets: [{
         label: '# ENVIOS POR MEXICO',
-        data: [560, 398, 423, 112,123,876,342],
+        data: [560, 398, 423, 112,123,876,],
         borderWidth: 1
       }]
     },
@@ -69,7 +69,7 @@ const ctx1 = document.getElementById('CHARTCATEGORIA1');
       labels: ['CHINA', 'BRAZIL', ' AFRICA', 'COREA', 'OCEANIA'],
       datasets: [{
         label: '# ENVIOS POR RESTO DEL MUNDO',
-        data: [786, 348, 236, 111, 342,58, 897],
+        data: [786, 348, 236, 111, 342,58],
         borderWidth: 1
       }]
     },
