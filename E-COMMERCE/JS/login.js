@@ -19,3 +19,6 @@ btn.addEventListener("click", () => {
 iconocerrar.addEventListener("click", () => {
     fondo.classList.remove('active-btn');
 });
+
+
+

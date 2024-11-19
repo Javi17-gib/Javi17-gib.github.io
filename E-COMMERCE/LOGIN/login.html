@@ -25,17 +25,17 @@
                 <span class="icono-cerrar"><i class="ri-close-line"></i></span>
                 <div class="contenedor-form login">
                     <h2>Iniciar Sesion</h2>
-                    <form action="#">
+                    <form id="loginForm">
                    <div class="contenedor-input">
                         <span class="icono"><i class="ri-mail-fill"></i></span>
-                        <input type="email" required>
-                        <label for="#">Email</label>
+                        <input type="email"  class="form-control" id="email" required>
+                        <label for="email">Email</label>
                     </div>
 
                     <div class="contenedor-input">
                         <span class="icono"><i class="ri-lock-2-fill"></i></span>
-                        <input type="password" required>
-                        <label for="#">Contraseña</label>
+                        <input type="password" class="form-control" id="password"  required >
+                        <label for="password">Contraseña</label>
                     </div> 
 
                     <div class="recordar">
@@ -65,13 +65,13 @@
                         <div class="contenedor-input">
                             <span class="icono"><i class="ri-mail-fill"></i></span>
                             <input type="email" required>
-                            <label for="#">Email</label>
+                            <label for="email">Email</label>
                         </div>
     
                         <div class="contenedor-input">
                             <span class="icono"><i class="ri-lock-2-fill"></i></span>
                             <input type="password" required>
-                            <label for="#">Contraseña</label>
+                            <label for="password">Contraseña</label>
                         </div>
                         
                         <div class="recordar">
@@ -91,5 +91,6 @@
 
 
     <script src="../JS/login.js"></script>
+    <script src="../JS/entrar.js"></script>
 </body>
 </html>
