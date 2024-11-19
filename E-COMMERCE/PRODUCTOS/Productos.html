@@ -93,11 +93,11 @@
             <!--title section-->
             <div class="d-flex justify-content-between">
                 <h4>Productos</h4>
-                <a class="btn btn-dark" href="Productos-add.html">
-                    <i class="bi bi-plus"></i>
-                    Agregar
-                </a>
-            </div>
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="bi bi-bag-check-fill"></i>
+                  Agregar
+                </button>
+              </div>
             <!--title section-->
 
             <!--data-->
@@ -168,7 +168,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Cliente</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Producto</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="" class="needs-validation" novalidate id="form">
@@ -182,49 +182,35 @@
                                 <div class="invalid-feedback">Nombre no valido</div>
                             </div>
                             <div class="col-6">
-                                <label for="">Apellido</label>
-                                <input required type="text" class="form-control" placeholder="Inserta el apellido">
+                                <label for="">Descripcion</label>
+                                <input required type="text" class="form-control" placeholder="Inserta la descripcion">
                                 <div class="valid-feedback">Correcto</div>
-                                <div class="invalid-feedback">Apellido no valido</div>
+                                <div class="invalid-feedback">Favor de llenar este campo</div>
                             </div>
                             <div class="col-4">
-                                <label for="">Edad</label>
+                                <label for="">Precio</label>
                                 <input required min="18" type="number" class="form-control"
-                                    placeholder="Inserta tu Edad">
+                                    placeholder="Inserta el precio">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Edad no valido</div>
                             </div>
                             <div class="col-4">
-                                <label for="">Peso</label>
-                                <input required type="number" class="form-control" placeholder="Inserta tu Peso">
+                                <label for="">Foto</label>
+                                <input required type="file" class="form-control" placeholder="Inserta la foto">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Peso no valido</div>
                             </div>
                             <div class="col-4">
-                                <label for="">Altura</label>
-                                <input required type="number" class="form-control" placeholder="Inserta tu Altura">
+                                <label for="">Categoria</label>
+                                    <select class="form-control">
+                                        <option value="1">LAPTOS</option>
+                                        <option value="2">PHONES</option>
+                                        <option value="3">SPEAKER´S</option>
+                                        <option value="4">GAMES</option>
+                                        <option value="5">SMART WATCHS</option>
+                                    </select>
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Altura no valido</div>
-                            </div>
-                            <div class="col-12">
-                                <label for="">Email</label>
-                                <input required type="email" class="form-control" placeholder="Inserta el Emal">
-                                <div class="valid-feedback">Correcto</div>
-                                <div class="invalid-feedback">Email no valido</div>
-                            </div>
-                            <div class="col-6">
-                                <label for="">password</label>
-                                <input required type="password" class="form-control"
-                                    placeholder="Inserta la comtraseña">
-                                <div class="valid-feedback">Correcto</div>
-                                <div class="invalid-feedback">Password no valido</div>
-                            </div>
-                            <div class="col-6">
-                                <label for="">Confirmar Password</label>
-                                <input required type="password" class="form-control"
-                                    placeholder="confirma la contraseña">
-                                <div class="valid-feedback">Correcto</div>
-                                <div class="invalid-feedback">Password no valido</div>
                             </div>
                         </div>
 
@@ -235,7 +221,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" id="btnGuardar">Agradar</button>
+                        <button type="submit" class="btn btn-primary" id="btnGuardar">Agregar</button>
                     </div>
 
                 </form>
@@ -248,7 +234,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./JS/users.js"></script>
+    <script src="../JS/users.js"></script>
 </body>
 
 </html>
