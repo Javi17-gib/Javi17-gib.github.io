@@ -134,6 +134,7 @@ a{
 .fondo.active .contenedor-form.registrar{
     transition: transform .17s ease ;
     transform: translateX(0);
+    
 }
 .fondo .icono-cerrar{
     position: absolute;

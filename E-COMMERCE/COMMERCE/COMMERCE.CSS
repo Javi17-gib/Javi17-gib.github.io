@@ -221,6 +221,7 @@ header {
     margin-bottom: 0.5rem;
 }
 
+
 .product-title {
     font-size: 1.1rem;
     font-weight: 600;
@@ -260,9 +261,31 @@ header {
 }
 
 @media (max-width: 768px) {
+       .nav-container{
+        display: flex;
+        flex-direction: column;
+       }
     .cart {
         width: 320px;
     }
+    .logo{
+        font-size: 3.5rem;
+       }
+       .logo i{
+        font-size: 3rem;
+       }
+       .listanav a{
+        font-size: 1.5rem;
+       }
+       .nav-btn{
+        font-size: 1rem;
+       }
+       #darkmode{
+        font-size: 2rem;
+       }
+       .contenido-img{
+        display: none;
+       }
 }
 
 @media (max-width: 360px) {

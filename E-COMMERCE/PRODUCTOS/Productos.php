@@ -175,7 +175,7 @@ $user_data = $_SESSION ['user_data'];
             <script> Swal.fire({
                 position: "top-end",
                 icon: "success",
-                title: "Your work has been saved",
+                title: "Producto Agregado Correctamente",
                 showConfirmButton: false,
                 timer: 1500
                 });
@@ -189,7 +189,7 @@ $user_data = $_SESSION ['user_data'];
     <script> Swal.fire({
                 position: "top-end",
                 icon: "error",
-                title: "Your work has been saved",
+                title: "Ocurrio un Error",
                 showConfirmButton: false,
                 timer: 1500
                 });

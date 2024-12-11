@@ -6,7 +6,7 @@ $proveedor = $_POST['txtProveedor'];
 
 $consulta ="insert into inventario (IDINVENTARIO, PRODUCTO,CANTIDAD,PREVEEDOR)
 values (0, '$producto', $cantidad, '$proveedor')";
-//$fecha=date('Y-m-d');
 $conexion -> query($consulta) or die ($conexion->error);
-echo "registro insertado correctamente"
+echo "registro insertado correctamente";
+header("Location: ../../stock/stock.php?status=1");
 ?>

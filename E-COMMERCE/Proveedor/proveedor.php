@@ -4,6 +4,8 @@ if (!isset ($_SESSION['user_data'])){
 }
 $user_data = $_SESSION ['user_data'];
 ?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,7 +52,7 @@ $user_data = $_SESSION ['user_data'];
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Producto</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="../admin/php/add-product.php" method="post"  class="needs-validation" novalidate id="form">
+                <form action="../admin/php/addCantidadProvedores.php" method="post"  class="needs-validation" novalidate id="form">
 
                     <div class="modal-body">
                         <div class="row">
@@ -58,18 +60,18 @@ $user_data = $_SESSION ['user_data'];
                             
                             <div class="col-6">
                                 <label for="">Proveedor</label>
-                                    <select name="#" class="form-control">
-                                        <option value="1">HP</option>
-                                        <option value="2">APPLE</option>
-                                        <option value="3">JBL</option>
-                                        <option value="4">EA SPORT</option>
+                                    <select name="txtProveedor" class="form-control">
+                                        <option value="HP">HP</option>
+                                        <option value="APPLE">APPLE</option>
+                                        <option value="JBL">JBL</option>
+                                        <option value="EA SPORT">EA SPORT</option>
                                     </select>
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Categoria no valido</div>
                             </div>
                             <div class="col-6">
                                 <label for="">Cantidad</label>
-                                <input name="#" required type="text" class="form-control" placeholder="Inserta la Cantidad">
+                                <input name="txtCantidad" required type="text" class="form-control" placeholder="Inserta la Cantidad">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Nombre no valido</div>
                             </div>
@@ -82,7 +84,7 @@ $user_data = $_SESSION ['user_data'];
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" id="btnGuardar1">Agregar</button>
+                        <button type="submit" class="btn btn-primary" id="btnAdd">Agregar</button>
                     </div>
 
                 </form>
@@ -102,10 +104,48 @@ $user_data = $_SESSION ['user_data'];
     </main>
     <!--Main Content-->
     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../JS/users.js"></script>
+
+
+    <?php 
+  if(isset($_GET['status'])){
+    $message="";
+    if($_GET['status']==1){
+
+      //insertado correctamente
+      $message =" Registro Insertado corectamente";
+
+    }else if ($_GET['status']==2){
+      $message =" Registro actualizado corectamente";
+
+    }else if ($_GET['status']==3){
+      $message =" Registro Eliminado corectamente";
+    }
+    ?>
+
+
+
+    <?php
+  }
+  
+  
+  ?>
+
+    <script>
+  Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "<?php echo $message ?>",
+  showConfirmButton: false,
+  timer: 1500
+});
+
+ </script>
+ 
 </body>
 </html>

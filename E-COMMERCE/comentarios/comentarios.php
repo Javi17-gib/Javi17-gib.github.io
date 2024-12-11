@@ -41,7 +41,8 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">IPHONE 15 PRO MAX</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"¡Excelente equipo! La cámara es una locura, y la batería dura todo el día sin problemas. 
+                            Llegó súper rápido y bien empacado. 100% recomendado para los que buscan lo mejor en celulares."</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">
@@ -57,7 +58,7 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">SMART WATCHS</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"El reloj está increíble, tiene muchas funciones útiles como medir los pasos y el ritmo cardíaco. Además, es muy fácil de usar. Perfecto para el gimnasio o el trabajo. ¡Muy contento con la compra!"</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">
@@ -73,7 +74,7 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">CONTROL PS 5</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"Todo perfecto con el control. Se siente súper cómodo y los gatillos adaptativos son una maravilla. Es original y funciona sin problema. Llegó antes de lo esperado. Muy recomendable."</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">
@@ -89,7 +90,7 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">CONTROL XBOX </h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"Funciona de maravilla, se conecta rápido y tiene un agarre cómodo. Ideal para largas horas de juego. El color está padrísimo, y llegó en excelentes condiciones. ¡Un 10 de 10!"</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">
@@ -105,7 +106,7 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">SPEAKER´S</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"El sonido es súper claro y potente, no distorsiona ni al volumen más alto. Ideal para fiestas o para escuchar música en casa. Es justo lo que esperaba. ¡Excelente producto!"</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">
@@ -121,7 +122,7 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">GAME CALL OF DUTY</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"¡Juego original y súper entretenido! La calidad gráfica es impresionante, y llegó sellado. Si te gustan los shooters, este es el mejor. Lo recomiendo sin dudar."</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">
@@ -137,7 +138,7 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">GAME WARZONE</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"Todo excelente, el juego es súper adictivo y corre sin problemas en mi consola. Llegó rápido y con el empaque original. Perfecto para pasar horas de diversión con amigos."</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">
@@ -153,7 +154,7 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">LAPTOP HP</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"La laptop es increíble, súper rápida y perfecta para trabajar y estudiar. La pantalla tiene excelente calidad, y la batería dura bastante. Muy buena relación calidad-precio. ¡Encantado con la compra!"</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">
@@ -169,7 +170,7 @@ $user_data = $_SESSION ['user_data'];
                         </div>
                         <div class="card-body">
                           <h5 class="card-title">IPHONE 16 PRO MAX</h5>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a voluptatibus maiores dolorum inventore quod corporis ipsum culpa? Qui nam id voluptatum repellendus unde reiciendis, quasi consequatur perferendis dicta esse..</p>
+                          <p class="card-text">"¡El mejor iPhone que he tenido! La cámara es brutal y la pantalla se ve espectacular. El Face ID es rapidísimo, y la batería dura muchísimo. Vale cada peso invertido. ¡10/10 recomendado!"</p>
                           <a href="#" class="btn btn-primary">Leer mas</a>
                         </div>
                         <div class="card-footer text-body-secondary">

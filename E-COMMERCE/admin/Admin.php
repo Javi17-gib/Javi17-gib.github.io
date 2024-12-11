@@ -38,7 +38,7 @@ $user_data = $_SESSION ['user_data'];
                                 <i class="bi bi-cash-coin" style="color: rgb(0, 0, 0);"></i>
                                 TOTAL DE INGRESOS MENSUALES
                             </label>
-                            <H5 class="h4 text-center">$456,000.00</H5>
+                            <H5 class="h4 text-center">$42,560,000.00 USD</H5>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ $user_data = $_SESSION ['user_data'];
                                 <i class="bi bi-person-circle" style="color: rgb(0, 0, 0);"></i>
                                 USUARIOS ACTIVOS
                             </label>
-                            <H5 class="h4 text-center">18,498</H5>
+                            <H5 class="h4 text-center">10,188,498</H5>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ $user_data = $_SESSION ['user_data'];
                                 <i class="bi bi-cash-coin" style="color: rgb(0, 0, 0);"></i>
                                 USUARIOS POR PAGAR (CREDITO)
                             </label>
-                            <H5 class="h4 text-center">456</H5>
+                            <H5 class="h4 text-center">456,00</H5>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ $user_data = $_SESSION ['user_data'];
                                 <i class="bi bi-bag-check-fill" style="color: rgb(0, 0, 0);"></i>
                                 TOTAL VENTAS MENSUALES
                             </label>
-                            <H5 class="h4 text-center">$250,000.00</H5>
+                            <H5 class="h4 text-center">2,550,000</H5>
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@
             <nav class="navegacion">
                 <a href="../INDEX/INDEX.HTML">Inicio</a>
                 <a href="#">Ubicacion</a>
-                <a href="../COMMERCE/COMMERCE.HTML">Tienda</a>
+                <a href="../COMMERCE/COMMERCE.php">Tienda</a>
                 <a href="#">Contactanos</a>
             </nav>
             
@@ -55,22 +55,22 @@
 
                 <div class="contenedor-form registrar">
                     <h2>Registrarse</h2>
-                    <form action="#">
+                    <form action="#" method="post" >
                         <div class="contenedor-input">
                             <span class="icono"><i class="ri-user-fill"></i></span>
-                            <input type="text" required>
+                            <input  name="NOMBRE" type="text" required>
                             <label for="#">Nombre de Usuario</label>
                         </div>
 
                         <div class="contenedor-input">
                             <span class="icono"><i class="ri-mail-fill"></i></span>
-                            <input type="email" required>
+                            <input name="AP" type="email" required>
                             <label for="email">Email</label>
                         </div>
     
                         <div class="contenedor-input">
                             <span class="icono"><i class="ri-lock-2-fill"></i></span>
-                            <input type="password" required>
+                            <input name="PASS" type="password" required>
                             <label for="password">Contraseña</label>
                         </div>
                         

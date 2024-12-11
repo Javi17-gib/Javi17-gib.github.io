@@ -89,7 +89,7 @@ $res = $conexion -> query($sql) or die($conexion-> error);
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" id="btnGuardar1">Agregar</button>
+                        <button type="submit" class="btn btn-primary" id="btnGuardar0">Agregar</button>
                     </div>
 
                 </form>
@@ -112,6 +112,7 @@ $res = $conexion -> query($sql) or die($conexion-> error);
                             </tr>
                         </thead>
                         <tbody>
+
                             <?php 
                             while($fila = mysqli_fetch_array($res)){
                             ?>
@@ -121,13 +122,17 @@ $res = $conexion -> query($sql) or die($conexion-> error);
                                 <td><?php echo $fila ['CANTIDAD'] ?></td>
                                 <td><?php echo $fila ['PREVEEDOR'] ?></td>
                                 <td>
-                                    <button class="btn btn-outline-danger">
-                                        <i class="bi bi-trash-fill"></i>
+                                    <button data-id2="<?php echo $fila['IDINVENTARIO']?>"  
+                                        class=" btnEliminar btn btn-outline-danger">
+                                        <i data-id2="<?php echo $fila['IDINVENTARIO']?>"
+                                         class="bi bi-trash-fill"></i>
+                                        
                                     </button>
                                 </td>
+
                                  <?php 
-                        }
-                        ?>
+                                    }
+                                ?>
                         </tbody>
                        
                         
@@ -148,9 +153,45 @@ $res = $conexion -> query($sql) or die($conexion-> error);
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="../JS/users.js"></script>
+    <script src="../JS/stock.js"></script>
+
+    <?php 
+  if(isset($_GET['status'])){
+    $message="";
+    if($_GET['status']==1){
+
+      //insertado correctamente
+      $message =" Registro Insertado corectamente";
+
+    }else if ($_GET['status']==2){
+      $message =" Registro actualizado corectamente";
+
+    }else if ($_GET['status']==3){
+      $message =" Registro Eliminado corectamente";
+    }
+    ?>
+
+
+
+    <?php
+  }
+  
+  
+  ?>
+
+    <script>
+  Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "<?php echo $message ?>",
+  showConfirmButton: false,
+  timer: 1500
+});
+
+ </script>
 </body>
 </html>

@@ -69,18 +69,33 @@ $user_data = $_SESSION ['user_data'];
             ?>
 
                 <tr>
-                  <th scope="row"> <?php echo $fila ['IDUSUARIO'] ?> </th>
+                  <th scope="row"><?php echo $fila ['IDUSUARIO'] ?></th>
                   <td><?php echo $fila ['NOMBRE'] ?></td>
                   <td><?php echo $fila ['APELLIDO'] ?></td>
                   <td><?php echo $fila ['CORREO'] ?></td>
-                  <td>*</td>
+                  <td>**********</td>
                   <td>
-                    <button class="btn btn-outline-danger  btn-sm mx-1">
-                      <i class="bi bi-trash-fill"></i>
+                    <button data-id="<?php echo $fila ['IDUSUARIO'] ?>" 
+                    class=" btnEliminar btn btn-outline-danger  btn-sm mx-1">
+                    <i class="bi bi-trash-fill" 
+                    data-id="<?php echo $fila ['IDUSUARIO'] ?>" ></i>
                     </button>
-                    <button class="btn btn-outline-warning btn-sm mx-1 ">
-                      <i class="bi bi-pencil-square"></i>
+
+                    <button class="btn btn-outline-warning btnEditar"
+                        data-id="<?php echo $fila ['IDUSUARIO'] ?>"
+                        data-Nombre="<?php echo $fila ['NOMBRE'] ?>"
+                        data-Apellido="<?php echo $fila ['APELLIDO'] ?>"
+                        data-email="<?php echo $fila ['CORREO'] ?>"
+                        data-bs-toggle="modal" data-bs-target="#modalEdit">
+
+                      <i class=" bi bi-pencil-square" 
+                        data-id="<?php echo $fila ['IDUSUARIO'] ?>"
+                        data-Nombre="<?php echo $fila ['NOMBRE'] ?>"
+                        data-Apellido="<?php echo $fila ['APELLIDO'] ?>"
+                        data-email="<?php echo $fila ['CORREO'] ?>"></i>
                     </button>
+
+
                     <button class="btn btn-outline-dark btn-sm mx-1">
                       <i class="bi bi-arrow-90deg-right"></i>
                     </button>
@@ -120,39 +135,83 @@ $user_data = $_SESSION ['user_data'];
           <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Cliente</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="" class="needs-validation" novalidate id="form">
+        <form action="../admin/php/add-users.php" class="needs-validation" method="post" novalidate id="form">
 
           <div class="modal-body">
             <div class="row">
               <div class="col-6">
                 <label for="">Nombre</label>
-                <input required type="text" class="form-control" placeholder="Inserta el nombre">
+                <input required type="text" name="txtname1" class="form-control" placeholder="Inserta el nombre">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Nombre no valido</div>
               </div>
               <div class="col-6">
                 <label for="">Apellido</label>
-                <input required type="text" class="form-control" placeholder="Inserta el apellido">
+                <input required type="text" name="txtap1" class="form-control" placeholder="Inserta el apellido">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Apellido no valido</div>
               </div>
-              <div class="col-12">
+              <div class="col-6">
                 <label for="">Email</label>
-                <input required type="email" class="form-control" placeholder="Inserta el Emal">
+                <input required type="email" name="txtemail1" class="form-control" placeholder="Inserta el Email">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Email no valido</div>
               </div>
               <div class="col-6">
                 <label for="">password</label>
-                <input required type="password" class="form-control" placeholder="Inserta la comtraseña">
+                <input required type="password"name="txtpass1"  class="form-control" placeholder="Inserta la contraseña">
                 <div class="valid-feedback">Correcto</div>
                 <div class="invalid-feedback">Password no valido</div>
               </div>
+            </div>
+
+            <div class="alert alert-danger mt-4 d-none" id="divAlerta" role="alert">
+              Favor de llenar los campos
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary" id="btnGuardar">Agregar</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade modal-lg" id="modalEdit" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Cliente</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="../admin/php/user-uddate.php" class="needs-validation" method="post" novalidate id="form">
+
+          <div class="modal-body">
+            <input type="hidden" name="id" id="txtIdEdit">
+            <div class="row">
               <div class="col-6">
-                <label for="">Confirmar Password</label>
-                <input required type="password" class="form-control" placeholder="confirma la contraseña">
+                <label for="">Nombre</label>
+                <input id="txtNombreEdit"  name="txtName" required type="text" class="form-control" placeholder="Inserta el nombre">
                 <div class="valid-feedback">Correcto</div>
-                <div class="invalid-feedback">Password no valido</div>
+                <div class="invalid-feedback">Nombre no valido</div>
+              </div>
+              <div class="col-6">
+                <label for="">Apellido</label>
+                <input  id="txtApellidoEdit" name="txtApellido" required type="text" class="form-control" placeholder="Inserta el apellido">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Apellido no valido</div>
+              </div>
+              <div class="col-12">
+                <label for="">Email</label>
+                <input id="txtEmailEdit" name="txtEmail" required type="email" class="form-control" placeholder="Inserta el Email">
+                <div class="valid-feedback">Correcto</div>
+                <div class="invalid-feedback">Email no valido</div>
               </div>
             </div>
 
@@ -177,6 +236,41 @@ $user_data = $_SESSION ['user_data'];
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../JS/users.js"></script>
+
+  <?php 
+  if(isset($_GET['status'])){
+    $message="";
+    if($_GET['status']==1){
+
+      //insertado correctamente
+      $message =" Registro Insertado corectamente";
+
+    }else if ($_GET['status']==2){
+      $message =" Registro actualizado corectamente";
+
+    }else if ($_GET['status']==3){
+      $message =" Registro Eliminado corectamente";
+    }
+    ?>
+
+
+
+    <?php
+  }
+  
+  
+  ?>
+
+ <script>
+  Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "<?php echo $message ?>",
+  showConfirmButton: false,
+  timer: 1500
+});
+
+ </script>
 </body>
 
 </html>
