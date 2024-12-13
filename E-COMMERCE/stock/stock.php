@@ -158,6 +158,7 @@ $res = $conexion -> query($sql) or die($conexion-> error);
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     <script src="../JS/stock.js"></script>
+    <script src="../JS/save.js"></script>
 
     <?php 
   if(isset($_GET['status'])){

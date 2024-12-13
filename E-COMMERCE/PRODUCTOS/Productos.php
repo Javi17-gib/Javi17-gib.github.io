@@ -166,6 +166,8 @@ $user_data = $_SESSION ['user_data'];
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../JS/users.js"></script>
+   
+   
 
     <?php 
      if(isset($_GET['status'])){

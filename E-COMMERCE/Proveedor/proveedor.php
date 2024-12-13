@@ -65,6 +65,7 @@ $user_data = $_SESSION ['user_data'];
                                         <option value="APPLE">APPLE</option>
                                         <option value="JBL">JBL</option>
                                         <option value="EA SPORT">EA SPORT</option>
+                                        <option value="EA SPORT">SAMSUNG</option>
                                     </select>
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Categoria no valido</div>

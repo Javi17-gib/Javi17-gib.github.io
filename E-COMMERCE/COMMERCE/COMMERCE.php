@@ -28,7 +28,7 @@ $res = $conexion -> query($sql) or die($conexion-> error);
                 </ul>
                 <div class="nav-derecha">
                     <a href="../LOGIN/login.php" class="nav-btn">Log In</a>
-                    <i class="ri-moon-fill bx-moon" id="darkmode"></i>
+                    
                 </div>
             <i class="bi bi-cart-fill" id="cart-icon"></i> 
             
