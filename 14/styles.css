@@ -104,9 +104,19 @@ p{
 .envelope-wrapper.disable-envelope .envelope::before {
     pointer-events: none;
 }
-.strong{
-    color: red;
+/* Texto "Para:" y "De:" en la esquina inferior izquierda */
+.envelope .recipient {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-family: "Marck Script", cursive;
+    font-size: 20px; /* Tamaño pequeño */
+    color: #ffffff; /* Color similar a tinta escrita */
+    z-index: 10;
+    text-align: left;
 }
+
+
 
 .envelope > .letter {
     position: absolute;
