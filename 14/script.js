@@ -30,3 +30,8 @@ document.addEventListener('click', (e) => {
         }
     }
 });
+window.addEventListener('DOMContentLoaded', () => {
+    const audio = new Audio("A Thousand Years.mp3");
+    audio.loop = true;
+    audio.play().catch(error => console.log("Autoplay bloqueado por el navegador:", error));
+});

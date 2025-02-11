@@ -208,13 +208,12 @@ p{
     background: var(--heart-color); 
 }
 
-@media  screen and  (max-width: 400px){
+@media  screen and  (max-width: 350px){
     .container {
         width: 300px;
-    }
-    .p{
         font-size: 40px;
     }
+    
 
     
     .envelope-wrapper > .envelope {
