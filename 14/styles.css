@@ -220,10 +220,13 @@ p{
     background: var(--heart-color); 
 }
 
-@media  screen and  (max-width: 320px){
+@media  screen and  (max-width: 350px){
     .container {
         width: 300px;
         font-size: 40px;
+    }
+    .body{
+        height: 100vh;
     }
     
 
