@@ -199,7 +199,17 @@ h1 {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--heart-color); 
 }
-
+/* Texto "Para:" y "De:" en la esquina inferior izquierda */
+.envelope .recipient {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-family: "Marck Script", cursive;
+    font-size: 20px; /* Tamaño pequeño */
+    color: #ffffff; /* Color similar a tinta escrita */
+    z-index: 10;
+    text-align: left;
+}
 @media  screen and  (max-width: 400px){
     .container {
         width: 300px;
