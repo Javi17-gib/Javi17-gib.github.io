@@ -42,12 +42,15 @@ h1 {
     z-index: 10;
     text-align: left;
 }
+
 p{
     font-family: "Marck Script", serif;
     text-align: center;
     font-size: 55px;
-    margin-bottom: 50px;
+    margin: 20px 0;
     color: #444;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 .container {
     width: 400px;
@@ -216,11 +219,10 @@ p{
 ::-webkit-scrollbar-thumb:hover {
     background: var(--heart-color); 
 }
-@media  screen and  (max-width: 400px){
+@media (max-width: 300px){
     .container {
         width: 300px;
     }
-
     
     .envelope-wrapper > .envelope {
         position: relative;
@@ -238,6 +240,11 @@ p{
         border-top: 150px solid var(--envelope-tab);
         border-right: 150px solid transparent;
         border-left: 150px solid transparent;
-}
+    }
+    p {
+        font-size: 40px;
+        line-height: .4;
+        padding: 5px;
+    }
 
 }
