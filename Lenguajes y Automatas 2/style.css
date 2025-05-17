@@ -29,6 +29,7 @@ body {
     50% { opacity: 0.5 }
   }
   
+  
   .search-container {
     margin-top: 1rem;
   }
@@ -116,4 +117,5 @@ a{
   color: white;
   text-decoration: none;
 }
+
   
