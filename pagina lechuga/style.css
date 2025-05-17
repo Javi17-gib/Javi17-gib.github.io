@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    scroll-behavior: smooth;
+    background-image: url('fondo.png');
+    background-color: #f4f4f9;
+    color: #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 3rem;
+  }
+  
+  h1 {
+    animation: pulse 2s infinite;
+    color: #ffffff;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1 }
+    50% { opacity: 0.5 }
+  }
+  
+  .search-container {
+    margin-top: 1rem;
+  }
+  
+  input[type=\"text\"] {
+    padding: 0.5rem 1rem;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: #14b8a6;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  
+  }
+  
+  button:hover {
+    background-color: #2dd4bf;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .card {
+    padding: 20px;
+    background: transparent;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+     z-index: 99;
+    
+  }
+  
+  .card h2 {
+    color: #2dd4bf;
+  }
+  
+  .card ul {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+    color: #ffffff; 
+  }
+  
+  .card li {
+    margin-bottom: 0.5rem;
+  }
+  .card ul li a:hover {
+  color: #0ea5e9;
+  text-decoration: underline;
+}
+
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: #94a3b8;
+  }
+
+a{
+  color: white;
+  text-decoration: none;
+}
+  

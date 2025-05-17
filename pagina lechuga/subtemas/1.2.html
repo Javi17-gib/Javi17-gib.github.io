@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.1 Árboles de Expresiones</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4472/4472533.png" type="image/png" />
+  <link rel="stylesheet" href="../subEstilos/1.1.css" />
+</head>
+<body>
+  <header>
+    <h1>1.2 Acciones semánticas de un analizador sintáctico</h1>
+    <nav>
+      <a href="../index.html">Volver al temario</a>
+    </nav>
+  </header>
+
+  <main id="subtema-content">
+    <section>
+      <h2>¿Qué es son las Acciones Semanticas?</h2>
+      <p>Durante el análisis sintáctico, se pueden incorporar acciones semánticas que ejecutan <br>
+        tareas adicionales como verificar tipos, construir árboles de sintaxis o actualizar estructuras <br>
+        como la tabla de símbolos. Estas acciones se definen junto con las producciones gramaticales y permiten <br>
+        una integración estrecha entre la estructura del lenguaje y su significado.</p>
+        <br>
+
+      <h3>Componentes de un analizador semántico</h3>
+      <br>
+      <ul>
+        <h4>Tabla de simbolos:</h4>
+        <p>Guarda los nombres de variables, su tipo y en qué parte del programa se usan.</p>
+          <br>
+          <h4>Comprobacion de tipos:</h4>
+        <p>Revisa que los tipos de datos coincidan en operaciones (por ejemplo, no sumar un número con un texto).</p>
+          <br>
+          <h4>Identificacion de variables:</h4>
+       <p>Verifica que todas las variables estén declaradas antes de usarlas.</p>
+        <br>
+          <h4>Deteccion de Errores:</h4>
+        <p>Encuentra errores como tipos incorrectos, variables no declaradas o uso indebido de funciones.</p>
+          <br>
+      </ul>
+      <br>
+      <h3>Ejemplo de un Analizador Semantico</h3>
+      <img style="width: 1000px; height: 400px; border-radius: 10px;" src="123.png" alt="Ejemplos" />
+    </section>
+  </main>
+
+ 
+</body>
+</html>
