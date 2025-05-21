@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1>1.1 Árboles de Expresiones</h1>
+    <h1>2.1 Notaciones: Prefija, Infija, Postfija</h1>
     <nav>
       <a href="../index.html">Volver al temario</a>
     </nav>
@@ -17,34 +17,28 @@
 
   <main id="subtema-content">
     <section>
-      <h2>¿Qué es un Árbol de Expresiones?</h2>
-      <p>Un árbol de expresión es una estructura de datos en forma de árbol que representa una expresión matemática o lógica. <br>
-        En cada nodo del árbol se encuentra un operador (como +, -, *, /) o un operando (como números o variables). <br>
-        La raíz del árbol representa la operación principal de la expresión, y los nodos hijos representan las subexpresiones.</p>
+      <h2>¿Qué son las notaciones?</h2>
+      <p>Las notaciones definen la forma en que se estructuran las expresiones en el código intermedio. <br>
+        Su principal objetivo es eliminar ambigüedades y facilitar el procesamiento automático.</p>
         <br>
 
-      <h3>Componentes de un Árbol de Expresiones</h3>
+      <h3>Notaciones Prefija, Infija y Postfija</h3>
       <br>
       <ul>
-        <h4>Operadores y operandos:</h4>
-        <p>Cada nodo puede ser un operador o un operando.</p>
+        <h4>Prefija:</h4>
+        <p>En esta notación, los operadores preceden a sus operandos, permitiendo una interpretación directa sin necesidad de paréntesis..</p>
           <br>
-          <h4>Árbol binario:</h4>
-        <p>Los árboles de expresión suelen ser árboles binarios, donde cada nodo interno tiene a lo más dos hijos</p>
+          <h4>Infija:</h4>
+        <p>Es la notación convencional en la que los operadores se colocan entre los operandos. Si bien es más legible para humanos, <br>
+          requiere mayor esfuerzo de análisis por parte del compilador.</p>
           <br>
-          <h4>Evaluación:</h4>
-        <p>Los árboles de expresión se pueden evaluar para obtener el valor de la expresión. </p>
+          <h4>Postfija:</h4>
+        <p>Los operadores se colocan después de los operandos. Esta notación facilita la evaluación mediante estructuras como pilas.</p>
         <br>
-        <h4>Representación del código:</h4>
-        <p>CSe usan para representar expresiones en código, por ejemplo, en compiladores y analizadores sintácticos. .</p>
-          <br>
-          <h4>Aplicaciones:</h4>
-        <p>Se utilizan en áreas como LINQ, DLR y la evaluación de expresiones en lenguajes de programación.</p>
-          <br>
       </ul>
       <br>
-      <h3>Ejemplo de un Árbol de Expresiones</h3>
-      <img style="border-radius: 10px;" src="arbol.jpg" alt="Ejemplo de Árbol de Expresiones" />
+      <h3>Ejemplo de las Notaciones</h3>
+      <img style="border-radius: 10px; width: 1000px; height: 400px;" src="notaciones.jpg" alt="Ejemplo de Árbol de Expresiones" />
     </section>
   </main>
 

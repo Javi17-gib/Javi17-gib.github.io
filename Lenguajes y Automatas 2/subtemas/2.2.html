@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1>1.1 Árboles de Expresiones</h1>
+    <h1>2.2 Representaciones: Notación Polaca, Código P, Triplos, Cuádruplos</h1>
     <nav>
       <a href="../index.html">Volver al temario</a>
     </nav>
@@ -17,34 +17,32 @@
 
   <main id="subtema-content">
     <section>
-      <h2>¿Qué es un Árbol de Expresiones?</h2>
-      <p>Un árbol de expresión es una estructura de datos en forma de árbol que representa una expresión matemática o lógica. <br>
-        En cada nodo del árbol se encuentra un operador (como +, -, *, /) o un operando (como números o variables). <br>
-        La raíz del árbol representa la operación principal de la expresión, y los nodos hijos representan las subexpresiones.</p>
+      <h2>¿Qué son las Representaciones de Codigo Intermedio?</h2>
+      <p>Estas representaciones permiten modelar las operaciones del programa de forma abstracta, <br>
+        facilitando tanto la optimización como la posterior traducción a lenguaje de bajo nivel.</p>
         <br>
 
-      <h3>Componentes de un Árbol de Expresiones</h3>
+      <h3>Representaciones de Codigo Intermedio</h3>
       <br>
       <ul>
-        <h4>Operadores y operandos:</h4>
-        <p>Cada nodo puede ser un operador o un operando.</p>
+        <h4>Notacion Polaca:</h4>
+        <p>Forma prefija de representar expresiones que facilita la evaluación automática y la generación de código.</p>
           <br>
-          <h4>Árbol binario:</h4>
-        <p>Los árboles de expresión suelen ser árboles binarios, donde cada nodo interno tiene a lo más dos hijos</p>
-          <br>
-          <h4>Evaluación:</h4>
-        <p>Los árboles de expresión se pueden evaluar para obtener el valor de la expresión. </p>
+          <h4>Codigo P:</h4>
+        <p>Es una representación secuencial de instrucciones diseñada para una máquina hipotética simple. <br>
+          Suele ser utilizada como paso intermedio en compiladores educativos.</p>
+          <h4>Triplos:</h4>
+        <p>Representación en la que cada instrucción se describe mediante tres componentes: <br>
+          operador, operando 1 y operando 2. No se asignan nombres explícitos a los resultados.</p>
         <br>
-        <h4>Representación del código:</h4>
-        <p>CSe usan para representar expresiones en código, por ejemplo, en compiladores y analizadores sintácticos. .</p>
-          <br>
-          <h4>Aplicaciones:</h4>
-        <p>Se utilizan en áreas como LINQ, DLR y la evaluación de expresiones en lenguajes de programación.</p>
+        <h4>Cuádruplos:</h4>
+        <p>Extienden la idea de los triplos incluyendo un cuarto componente que representa el resultado de la operación. <br>
+          Esto permite un manejo más claro y flexible de los valores temporales.</p>
           <br>
       </ul>
       <br>
       <h3>Ejemplo de un Árbol de Expresiones</h3>
-      <img style="border-radius: 10px;" src="arbol.jpg" alt="Ejemplo de Árbol de Expresiones" />
+      <img style="border-radius: 10px;" src="codigo.png" alt="Ejemplo de Árbol de Expresiones" />
     </section>
   </main>
 

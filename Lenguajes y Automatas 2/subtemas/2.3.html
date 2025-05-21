@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1>1.1 Árboles de Expresiones</h1>
+    <h1>2.3 Esquema de generación: Variables, Constantes, Expresiones, Asignaciones, Control, Funciones, Estructuras</h1>
     <nav>
       <a href="../index.html">Volver al temario</a>
     </nav>
@@ -17,34 +17,36 @@
 
   <main id="subtema-content">
     <section>
-      <h2>¿Qué es un Árbol de Expresiones?</h2>
-      <p>Un árbol de expresión es una estructura de datos en forma de árbol que representa una expresión matemática o lógica. <br>
-        En cada nodo del árbol se encuentra un operador (como +, -, *, /) o un operando (como números o variables). <br>
-        La raíz del árbol representa la operación principal de la expresión, y los nodos hijos representan las subexpresiones.</p>
+      <h2>¿Qué son los Esquemas de Generacion</h2>
+      <p>Los esquemas de generación definen cómo se transforma cada constructo del lenguaje fuente en su equivalente de código intermedio.</p>
         <br>
 
-      <h3>Componentes de un Árbol de Expresiones</h3>
+      <h3>Tipos de Esquemas de Generacion</h3>
       <br>
       <ul>
-        <h4>Operadores y operandos:</h4>
-        <p>Cada nodo puede ser un operador o un operando.</p>
+        <h4>Variables y Constantes:</h4>
+        <p>Se asignan direcciones lógicas y se registran en la tabla de símbolos, estableciendo su tipo, tamaño y ubicación.</p>
           <br>
-          <h4>Árbol binario:</h4>
-        <p>Los árboles de expresión suelen ser árboles binarios, donde cada nodo interno tiene a lo más dos hijos</p>
-          <br>
-          <h4>Evaluación:</h4>
-        <p>Los árboles de expresión se pueden evaluar para obtener el valor de la expresión. </p>
+          <h4>Expresiones:</h4>
+        <p>Se traducen en una secuencia de instrucciones que reflejan el orden correcto de evaluación, usando registros o temporales.</p>
         <br>
-        <h4>Representación del código:</h4>
-        <p>CSe usan para representar expresiones en código, por ejemplo, en compiladores y analizadores sintácticos. .</p>
+        <h4>Asignaciones:</h4>
+        <p>Se genera el código que permite evaluar la expresión del lado derecho y almacenar el resultado en la variable del lado izquierdo.</p>
           <br>
-          <h4>Aplicaciones:</h4>
-        <p>Se utilizan en áreas como LINQ, DLR y la evaluación de expresiones en lenguajes de programación.</p>
+          <h4>Control:</h4>
+        <p>Se manejan estructuras de decisión y repetición mediante instrucciones de salto condicional y etiquetas para definir el flujo del programa.</p>
+          <br>
+          <h4>Funciones:</h4>
+        <p>Se generan instrucciones para gestionar parámetros, activaciones, retornos y contextos locales, respetando el ámbito y el control de flujo.</p>
+          <br>
+          <h4>Estructuras:</h4>
+        <p>Requieren representaciones que permitan el acceso eficiente a sus campos y la manipulación de datos compuestos, <br>
+          considerando alineación y desplazamiento en memoria.</p>
           <br>
       </ul>
       <br>
       <h3>Ejemplo de un Árbol de Expresiones</h3>
-      <img style="border-radius: 10px;" src="arbol.jpg" alt="Ejemplo de Árbol de Expresiones" />
+      <img style="border-radius: 10px;" src="esquema gen.jpeg" alt="Ejemplo de Árbol de Expresiones" />
     </section>
   </main>
 

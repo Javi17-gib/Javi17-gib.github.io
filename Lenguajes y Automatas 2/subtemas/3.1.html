@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generacion de Codigo Intermedio</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4472/4472533.png" type="image/png" />
+  <link rel="stylesheet" href="../subEstilos/1.1.css" />
+</head>
+<body>
+  <header>
+    <h1>3.1 Tipos: Locales, Ciclos, Globales, De mirilla</h1>
+    <nav>
+      <a href="../index.html">Volver al temario</a>
+    </nav>
+  </header>
+
+  <main id="subtema-content">
+    <section>
+      <h2>¿Qué son los Tipos de Optimización</h2>
+      <p>La optimización es una fase crítica en la construcción de compiladores. Su objetivo principal es mejorar el rendimiento del código generado, <br>
+        ya sea reduciendo su tamaño, acelerando su ejecución o disminuyendo el uso de recursos. Esta etapa puede aplicar transformaciones locales o globales <br>
+        sobre el código intermedio para lograr un programa más eficiente sin alterar su comportamiento.</p>
+        <br>
+
+      <h3>Tipos de Optimización</h3>
+      <br>
+      <ul>
+        <h4>Locales:</h4>
+       <p>Se realizan dentro de un solo bloque básico (una secuencia de instrucciones sin saltos internos). <br>
+        Este tipo de optimización es rápida y segura, ya que se limita a un pequeño segmento del código. <br>
+        Las transformaciones incluyen la eliminación de redundancias, reemplazo de expresiones innecesarias y reordenamiento de instrucciones.</p>
+          <br>
+          <h4>Ciclos:</h4>
+          <p>Estas optimizaciones se centran en mejorar la eficiencia de los bucles, que suelen ser las partes más ejecutadas de un programa. <br>
+            Se puede buscar reducir el número de iteraciones, mover instrucciones fuera del ciclo o minimizar el número de accesos a memoria.</p>
+       <br>
+        <h4>Globales:</h4>
+        <p>Abarcan múltiples bloques básicos o incluso funciones completas. Requieren un análisis exhaustivo del flujo de datos y del control del programa. <br>
+            Este tipo de optimización puede implicar el movimiento de código entre bloques, eliminación de variables innecesarias o reutilización de resultados computados.</p>
+          <br>
+          <h4> De mirilla:</h4>
+        <p>Consiste en inspeccionar pequeñas ventanas o secuencias cortas de instrucciones en busca de patrones ineficientes. <br>
+            Es útil para realizar ajustes simples pero efectivos, como reemplazar secuencias redundantes o instrucciones costosas por otras más eficientes.</p>
+          <br>
+      </ul>
+      <br>
+      <h3>Ejemplo de Tipos de Optimización</h3>
+      <img style="border-radius: 10px;" src="optimizacion.jpeg" alt="Ejemplo de Árbol de Expresiones" />
+    </section>
+  </main>
+
+ 
+</body>
+</html>
