@@ -117,5 +117,56 @@ a{
   color: white;
   text-decoration: none;
 }
+/* RESPONSIVE DESIGN PARA CELULARES */
+@media (max-width: 768px) {
+  header {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 
-  
+  main {
+    padding: 1rem;
+  }
+
+  .card {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card ul {
+    padding-left: 1rem;
+  }
+
+  .card li {
+    font-size: 1rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .card li {
+    font-size: 0.95rem;
+  }
+}

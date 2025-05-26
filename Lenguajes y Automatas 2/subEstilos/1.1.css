@@ -78,3 +78,67 @@ p{
 h4 {
   color: white;
 }
+h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* RESPONSIVE DESIGN PARA CELULARES */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  #subtema-content {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  section img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  h2, h3, h4 {
+    text-align: left;
+  }
+
+  #subtema-content {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+}
