@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio — Luis Valverde</title>
+  <meta name="description" content="Portafolio profesional de Luis Valverde — proyectos, curriculum y evidencia.">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <!-- Partículas -->
+  <div id="particles-js" class="bg-particles" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" role="navigation" aria-label="Main Navigation">
+      <a class="brand" href="index.html">Luis Valverde</a>
+
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html" class="active">Inicio</a></li>
+        <li role="none"><a role="menuitem" href="projects.html">Proyectos</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn-outline" href="../assets/CV.pdf" download>Descargar CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home" aria-label="Hero principal">
+      <div class="hero-grid">
+        <!-- Left: texto -->
+        <div class="hero-intro" data-aos="fade-up">
+          <p class="eyebrow">Hola, mi nombre es</p>
+          <h1 class="hero-title">Luis Valverde</h1>
+          <p class="lead">Desarrollador Web • Electrónica • Proyectos académicos y profesionales</p>
+
+          <div class="hero-cta">
+            <a class="btn-primary" href="projects.html">Ver Proyectos</a>
+            <a class="btn-ghost" href="contact.html">Contactar</a>
+          </div>
+
+          <ul class="skill-chips" aria-hidden="false">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Arduino</li><li>PHP</li>
+          </ul>
+        </div>
+
+        <!-- Right: foto (alineada a la misma altura) -->
+        <aside class="hero-photo" data-aos="zoom-in" aria-hidden="false">
+          <div class="photo-frame" role="img" aria-label="Foto de Luis Valverde">
+            <img src="../assets/OIP.webp" alt="Foto de Luis Valverde" />
+            <div class="photo-badge">Disponible</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT / CURRICULUM -->
+    <section class="about container" id="about" data-aos="fade-right">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Sobre mí</h2>
+          <p>Escribe aquí una descripción profesional: estudios, experiencia, objetivos y tecnologías que dominas. Sustituye este texto por tu biografía.</p>
+
+          <ul class="info-list">
+            <li><strong>Correo:</strong> <a href="mailto:TU_EMAIL">TU_EMAIL</a></li>
+            <li><strong>Teléfono:</strong> +52 000 000 0000</li>
+            <li><strong>Ubicación:</strong> Ciudad, Estado</li>
+            <li><strong>Formación:</strong> Ingeniería / Licenciatura en ...</li>
+          </ul>
+        </div>
+
+        <div class="timeline" aria-hidden="false">
+          <h3>Línea del tiempo</h3>
+          <div class="timeline-items">
+            <div class="timeline-item"><time>2025</time><p>Proyecto destacado — Implementación completa.</p></div>
+            <div class="timeline-item"><time>2024</time><p>Certificación / Curso / Prácticas.</p></div>
+            <div class="timeline-item"><time>2022</time><p>Inicio de estudios universitarios.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights container" data-aos="fade-up">
+      <h2>Habilidades & Herramientas</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5 <div class="meter"><span style="width:90%"></span></div></div>
+        <div class="skill-card">CSS3 <div class="meter"><span style="width:88%"></span></div></div>
+        <div class="skill-card">JavaScript <div class="meter"><span style="width:82%"></span></div></div>
+        <div class="skill-card">Arduino <div class="meter"><span style="width:75%"></span></div></div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="callout" data-aos="zoom-in">
+      <div class="container callout-inner">
+        <h3>¿Te gusta lo que ves?</h3>
+        <p>Contáctame para colaborar. Reviso correo regularmente.</p>
+        <a class="btn-primary" href="contact.html">Enviar Mensaje</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© <span id="year"></span> Luis Valverde — Todos los derechos reservados</div>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a> • <a href="#" aria-label="LinkedIn">LinkedIn</a> • <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/particles.js@2.0.0/particles.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script> AOS.init({ once:true, duration:800 }); /* particles initialized in script.js (safe) */ </script>
+</body>
+</html>

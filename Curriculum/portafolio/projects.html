@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyectos — Luis Valverde</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">Luis Valverde</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="projects.html">Proyectos</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn-outline" href="../assets/CV.pdf" download>Descargar CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="projects-hero" data-aos="fade-up">
+      <h1>Proyectos Destacados</h1>
+      <p>Galería con tarjetas interactivas. Haz click en cualquier proyecto para ver detalles.</p>
+    </section>
+
+    <section class="projects-grid" data-aos="fade-up" id="projectsGrid">
+      <!-- Proyecto 1 -->
+      <article class="project-card" data-project='{
+        "title":"Galeria",
+        "images":["../assets/1.png","../assets/2.png","../assets/3.png","../assets/4.png","../assets/5.png"]
+      }'>
+        <img src="../assets/isc.jpg" alt="Proyecto 1 thumbnail">
+        <div class="project-meta">
+          <h3>Pagina Web de Asesorias Academicas</h3>
+          <p>HTML • CSS • JS • Laravel</p>
+          <div class="project-actions">
+            <button class="btn-primary view-project">Ver</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 2 -->
+      <article class="project-card" data-project='{
+        "title":"Galeria",
+        "images":["../assets/casa1.jpg","../assets/casa2.jpg","../assets/casa3.jpg"]
+      }'>
+        <img src="../assets/casa.jpg" alt="Proyecto 2 thumbnail">
+        <div class="project-meta">
+          <h3>Casa Inteligente</h3>
+          <p>Arduino • Sensores • Actuadores</p>
+          <div class="project-actions">
+            <button class="btn-primary view-project">Ver</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 3 -->
+      <article class="project-card" data-project='{
+        "title":"Galeria",
+        "images":["../assets/T1.png","../assets/T2.png"]
+      }'>
+        <img src="../assets/temario.jpg" alt="Proyecto 3 thumbnail">
+        <div class="project-meta">
+          <h3>Temario Personalizado</h3>
+          <p>HTML • CSS • JS</p>
+          <div class="project-actions">
+            <button class="btn-primary view-project">Ver</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="projects-grid" data-aos="fade-up" id="projectsGrid">
+      <!-- Proyecto 4 -->
+      <article class="project-card" data-project='{
+        "title":"Galeria",
+        "images":["../assets/C1.png","../assets/C4.png","../assets/C5.png","../assets/C2.png","../assets/C6.png"]
+      }'>
+        <img src="../assets/com.jpg" alt="Proyecto 4 thumbnail">
+        <div class="project-meta">
+          <h3>E-COMMERCE</h3>
+          <p>HTML • CSS • JS</p>
+          <div class="project-actions">
+            <button class="btn-primary view-project">Ver</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 5 -->
+      <article class="project-card" data-project='{
+        "title":"Galeria",
+        "images":["../assets/3D.png"]
+      }'>
+        <img src="../assets/3d1.png" alt="Proyecto 5 thumbnail">
+        <div class="project-meta">
+          <h3>Diseño 3D</h3>
+          <p>SOLIDWORKS • Blender</p>
+          <div class="project-actions">
+            <button class="btn-primary view-project">Ver</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 6 -->
+      <article class="project-card" data-project='{
+        "title":"Galeria",
+        "images":["../assets/F1.png","../assets/F2.png","../assets/F3.png"]
+      }'>
+        <img src="../assets/figma.jpg" alt="Proyecto 5 thumbnail">
+        <div class="project-meta">
+          <h3>Diseños de Paginas Web</h3>
+          <p>FIGMA</p>
+          <div class="project-actions">
+            <button class="btn-primary view-project">Ver</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-label="Detalles del proyecto">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalTech"></p>
+      <p id="modalDesc"></p>
+
+      <!-- Miniaturas -->
+      <div class="modal-thumbnails" id="modalThumbnails"></div>
+
+      <!-- Lightbox para imagen grande -->
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">◀</button>
+        <img id="lightboxImg" src="" alt="Imagen completa">
+        <button class="lightbox-next">▶</button>
+      </div>
+
+      <div class="modal-actions">
+        <a id="modalGithub" class="btn-ghost" href="#" target="_blank" rel="noopener">Ver Código</a>
+        <a href="contact.html" class="btn-primary">Contactar</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© <span id="year2"></span> Luis Valverde</div>
+      <div class="socials"><a href="#">GitHub</a></div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/script.js"></script>
+  <script> AOS.init(); document.getElementById("year2").innerText = new Date().getFullYear();</script>
+</body>
+</html>
