@@ -82,3 +82,22 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxImg.src = currentImages[currentIndex];
   });
 });
+// HAMBURGUESA
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+  hamburger.classList.toggle("active");
+});
+
+// CONTACT FORM (simulado)
+const form = document.getElementById("contactForm");
+const status = document.getElementById("formStatus");
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  status.textContent = "Mensaje enviado con éxito!";
+  form.reset();
+});
+
