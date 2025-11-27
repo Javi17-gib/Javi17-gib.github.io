@@ -8,14 +8,23 @@
   <link rel="stylesheet" href="../css/project.css">
 </head>
 <body>
+  <!-- HEADER CON MENÚ HAMBURGUESA -->
   <header class="site-header">
     <nav class="nav container">
       <a class="brand" href="index.html">Luis Valverde</a>
+
+      <button class="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
         <li><a class="active" href="projects.html">Proyectos</a></li>
         <li><a href="contact.html">Contacto</a></li>
       </ul>
+
       <div class="nav-actions">
         <a class="btn-outline" href="../assets/CV.pdf" download>Descargar CV</a>
       </div>
@@ -74,9 +83,6 @@
         </div>
       </article>
 
-    </section>
-
-    <section class="projects-grid" data-aos="fade-up" id="projectsGrid">
       <!-- Proyecto 4 -->
       <article class="project-card" data-project='{
         "title":"Galeria",
@@ -112,7 +118,7 @@
         "title":"Galeria",
         "images":["../assets/F1.png","../assets/F2.png","../assets/F3.png"]
       }'>
-        <img src="../assets/figma.jpg" alt="Proyecto 5 thumbnail">
+        <img src="../assets/figma.jpg" alt="Proyecto 6 thumbnail">
         <div class="project-meta">
           <h3>Diseños de Paginas Web</h3>
           <p>FIGMA</p>
@@ -124,25 +130,20 @@
     </section>
   </main>
 
-  <!-- Modal -->
+  <!-- Modal y Lightbox (igual que antes, intacto) -->
   <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-label="Detalles del proyecto">
     <div class="modal-content">
       <button class="modal-close" aria-label="Cerrar modal">&times;</button>
       <h2 id="modalTitle"></h2>
       <p id="modalTech"></p>
       <p id="modalDesc"></p>
-
-      <!-- Miniaturas -->
       <div class="modal-thumbnails" id="modalThumbnails"></div>
-
-      <!-- Lightbox para imagen grande -->
       <div id="lightbox" class="lightbox" aria-hidden="true">
         <button class="lightbox-close">&times;</button>
         <button class="lightbox-prev">◀</button>
         <img id="lightboxImg" src="" alt="Imagen completa">
         <button class="lightbox-next">▶</button>
       </div>
-
       <div class="modal-actions">
         <a id="modalGithub" class="btn-ghost" href="#" target="_blank" rel="noopener">Ver Código</a>
         <a href="contact.html" class="btn-primary">Contactar</a>
@@ -159,6 +160,9 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="../js/script.js"></script>
-  <script> AOS.init(); document.getElementById("year2").innerText = new Date().getFullYear();</script>
+  <script>
+    AOS.init(); 
+    document.getElementById("year2").innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
