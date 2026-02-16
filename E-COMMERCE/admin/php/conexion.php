@@ -2,7 +2,7 @@
 $server = 'localhost';
 $user ='root';
 $pass ='';
-$bd ='ProyectoEcommerce';
+$bd ='proyectoecommerce';
 $conexion = new mysqli($server,$user,$pass,$bd);
 if($conexion ->connect_error){
     die('NO SE PUEDE CONETAR A MYSQL PRENDELOOOOOO BURRO');
