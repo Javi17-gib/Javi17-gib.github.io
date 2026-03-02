@@ -139,3 +139,57 @@ background:var(--green);
 color:white;
 cursor:pointer;
 }
+/* =========================
+   RESPONSIVE MOBILE PRO
+========================= */
+
+@media(max-width:768px){
+
+body{
+    height:auto;
+    min-height:100vh;
+    padding:20px 0;
+    align-items:flex-start;
+}
+
+.auth-card{
+    flex-direction:column;
+    max-width:500px;
+    border-radius:20px;
+}
+
+/* PARTE VERDE ARRIBA */
+.auth-left{
+    width:100%;
+    padding:40px 20px;
+    border-radius:20px 20px 0 0;
+}
+
+/* FORMULARIO ABAJO */
+.auth-right{
+    width:100%;
+    padding:30px 20px;
+}
+
+/* Logo más pequeño en móvil */
+.logo{
+    width:110px;
+}
+
+/* Ajuste botones toggle */
+.form-toggle button{
+    font-size:14px;
+}
+
+/* Inputs más cómodos */
+.input-group input{
+    padding:14px;
+}
+
+/* Botón más grande táctil */
+.btn-primary{
+    padding:14px;
+    font-size:15px;
+}
+
+}
