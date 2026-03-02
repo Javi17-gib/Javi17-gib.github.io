@@ -57,3 +57,33 @@ document.querySelector(".logo-container")
     document.getElementById("sidebar")
     .classList.toggle("collapsed");
 });
+/* PROTECCIÓN GLOBAL */
+window.addEventListener("load",()=>{
+
+    const session =
+        localStorage.getItem("agroSession") ||
+        sessionStorage.getItem("agroSession");
+
+    if(!session){
+        window.location.href = "login.html";
+    } else {
+        const user = JSON.parse(session);
+        const nameElement = document.querySelector(".admin-info span");
+        if(nameElement){
+            nameElement.textContent = user.name;
+        }
+    }
+
+});
+
+/* LOGOUT */
+const logoutBtn = document.querySelector(".logout a");
+
+if(logoutBtn){
+    logoutBtn.addEventListener("click",(e)=>{
+        e.preventDefault();
+        localStorage.removeItem("agroSession");
+        sessionStorage.removeItem("agroSession");
+        window.location.href = "login.html";
+    });
+}

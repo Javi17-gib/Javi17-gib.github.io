@@ -4,7 +4,9 @@ const registerBtn = document.getElementById("registerBtn");
 const loginForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
 
-// Toggle formularios
+const rememberMeCheckbox = document.getElementById("rememberMe");
+
+/* Toggle formularios */
 loginBtn.onclick = () => {
     loginBtn.classList.add("active");
     registerBtn.classList.remove("active");
@@ -19,7 +21,7 @@ registerBtn.onclick = () => {
     loginForm.classList.remove("active-form");
 };
 
-// Mostrar / ocultar contraseña
+/* Mostrar password */
 document.querySelectorAll(".toggle-pass").forEach(icon=>{
     icon.addEventListener("click",()=>{
         const input = icon.previousElementSibling;
@@ -27,33 +29,56 @@ document.querySelectorAll(".toggle-pass").forEach(icon=>{
     });
 });
 
-// Registro
+/* Registro */
 registerForm.addEventListener("submit",function(e){
     e.preventDefault();
 
-    const name = document.getElementById("registerName").value;
-    const email = document.getElementById("registerEmail").value;
-    const password = document.getElementById("registerPassword").value;
+    const user = {
+        name: registerName.value,
+        email: registerEmail.value,
+        password: registerPassword.value
+    };
 
-    const user = { name, email, password };
     localStorage.setItem("agroUser", JSON.stringify(user));
-
-    alert("Usuario registrado correctamente ✅");
+    alert("Usuario registrado ✅");
     loginBtn.click();
 });
 
-// Login
+/* Login */
 loginForm.addEventListener("submit",function(e){
     e.preventDefault();
 
-    const email = document.getElementById("loginEmail").value;
-    const password = document.getElementById("loginPassword").value;
-
     const storedUser = JSON.parse(localStorage.getItem("agroUser"));
 
-    if(storedUser && storedUser.email === email && storedUser.password === password){
+    if(storedUser &&
+       storedUser.email === loginEmail.value &&
+       storedUser.password === loginPassword.value){
+
+        const sessionData = {
+            name: storedUser.name,
+            email: storedUser.email
+        };
+
+        if(rememberMeCheckbox.checked){
+            localStorage.setItem("agroSession", JSON.stringify(sessionData));
+        } else {
+            sessionStorage.setItem("agroSession", JSON.stringify(sessionData));
+        }
+
         window.location.href = "index.html";
-    }else{
+
+    } else {
         alert("Credenciales incorrectas ❌");
+    }
+});
+
+/* Auto-login */
+window.addEventListener("load",()=>{
+    const session =
+        localStorage.getItem("agroSession") ||
+        sessionStorage.getItem("agroSession");
+
+    if(session){
+        window.location.href = "index.html";
     }
 });
