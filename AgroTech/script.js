@@ -41,3 +41,19 @@ new Chart(ctx, {
         }
     }
 });
+// ACTIVAR ITEM
+const menuItems = document.querySelectorAll(".menu li");
+
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        menuItems.forEach(i => i.classList.remove("active"));
+        item.classList.add("active");
+    });
+});
+
+// COLAPSAR SIDEBAR (doble click logo)
+document.querySelector(".logo-container")
+.addEventListener("dblclick", () => {
+    document.getElementById("sidebar")
+    .classList.toggle("collapsed");
+});

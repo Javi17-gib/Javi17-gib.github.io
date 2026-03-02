@@ -274,5 +274,94 @@ width:150px;
 
 .logout{
     margin-top:20px;
+    color:#ff1500;
+}
+/* ICONOS */
+.icon{
+    font-size:16px;
+    width:24px;
+    text-align:center;
+}
+
+/* MENU MEJORADO */
+.menu li{
+    position:relative;
+    padding:12px 14px;
+    margin-bottom:6px;
+    border-radius:10px;
+    cursor:pointer;
+    color:#cfd8dc;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    transition:all 0.3s ease;
+}
+
+.menu li span{
+    font-size:14px;
+    white-space:nowrap;
+    transition:0.3s;
+}
+
+/* Línea lateral activa */
+.menu li.active::before{
+    content:"";
+    position:absolute;
+    left:-25px;
+    height:100%;
+    width:4px;
+    background:var(--green-light);
+    border-radius:5px;
+}
+
+/* Hover */
+.menu li:hover{
+    background:rgba(46,125,50,0.15);
+    transform:translateX(5px);
+}
+
+/* Badge notificación */
+.badge-menu{
+    margin-left:auto;
+    background:var(--green);
+    color:white;
+    font-size:11px;
+    padding:3px 8px;
+    border-radius:20px;
+}
+
+/* LOGOUT */
+.logout{
+    margin-top:20px;
     color:#ff8a80;
+}
+
+/* SIDEBAR COLAPSADO */
+.sidebar.collapsed{
+    width:80px;
+}
+
+.sidebar.collapsed .logo-text,
+.sidebar.collapsed .menu li span,
+.sidebar.collapsed .badge-menu{
+    display:none;
+}
+
+.sidebar.collapsed .menu li{
+    justify-content:center;
+}
+.menu li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:inherit;
+    width:100%;
+}
+
+.logo-link{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
 }

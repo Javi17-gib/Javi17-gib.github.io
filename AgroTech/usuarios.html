@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usuarios | AgroTech Admin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="usuarios.css">
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="logo-container">
+        <img src="agro.png" class="logo-img">
+        <span class="logo-text">AgroTech</span>
+    </div>
+
+    <ul class="menu">
+        <li><a href="index.html">📊 Dashboard</a></li>
+        <li class="active"><a href="usuarios.html">👥 Usuarios</a></li>
+        <li><a href="productores.html">🚜 Productores</a></li>
+        <li><a href="compradores.html">🛒 Compradores</a></li>
+        <li><a href="productos.html">📦 Productos</a></li>
+        <li><a href="trazabilidad.html">🌾 Trazabilidad</a></li>
+        <li><a href="pedidos.html">📑 Pedidos</a></li>
+        <li><a href="marketplace.html">🏪 Marketplace</a></li>
+        <li><a href="reportes.html">📈 Reportes</a></li>
+        <li><a href="configuracion.html">⚙️ Configuración</a></li>
+        <li class="logout"><a href="login.html">🚪 Cerrar sesión</a></li>
+    </ul>
+
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+
+<header>
+    <div class="left-header">
+        <h2>Usuarios</h2>
+    </div>
+
+    <div class="admin-info">
+        <span>Luis Admin</span>
+        <img src="agro.png">
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="page-header">
+        <div>
+            <h1>👥 Gestión de Usuarios</h1>
+            <p>Administra productores, compradores y administradores</p>
+        </div>
+
+        <button class="btn-primary">+ Nuevo Usuario</button>
+    </div>
+
+    <div class="filters">
+        <select>
+            <option>Todos los roles</option>
+            <option>Productor</option>
+            <option>Comprador</option>
+            <option>Admin</option>
+        </select>
+
+        <select>
+            <option>Todos los estados</option>
+            <option>Activo</option>
+            <option>Inactivo</option>
+        </select>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    <th>Estado</th>
+                    <th>Fecha Registro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>juan@email.com</td>
+                    <td>Productor</td>
+                    <td><span class="badge activo">Activo</span></td>
+                    <td>01/03/2026</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>
