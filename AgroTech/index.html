@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroTech Admin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+    
+    <div class="logo-container">
+        <img src="agro.png" alt="AgroTech Logo" class="logo-img">
+        <span class="logo-text">AgroTech</span>
+    </div>
+
+    <ul class="menu">
+        <li class="active"><span>Dashboard</span></li>
+        <li><span>Usuarios</span></li>
+        <li><span>Productores</span></li>
+        <li><span>Compradores</span></li>
+        <li><span>Productos</span></li>
+        <li><span>Trazabilidad</span></li>
+        <li><span>Pedidos</span></li>
+        <li><span>Marketplace</span></li>
+        <li><span>Reportes</span></li>
+        <li><span>Configuración</span></li>
+        <li class="logout"><span>Cerrar sesión</span></li>
+    </ul>
+
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+
+<header>
+    <div class="left-header">
+        <button class="hamburger" id="menuToggle">☰</button>
+        <h2>Dashboard</h2>
+    </div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Buscar...">
+    </div>
+
+    <div class="admin-info">
+        <div class="status"></div>
+        <span>Luis Admin</span>
+        <img src="agro.png" alt="admin">
+    </div>
+</header>
+
+<!-- KPI CARDS -->
+<section class="kpis">
+    <div class="card"><span>Ingresos Totales</span><h3>$180,450</h3><small>+12%</small></div>
+    <div class="card"><span>Pedidos Activos</span><h3>1,245</h3><small>+5%</small></div>
+    <div class="card"><span>Productores</span><h3>328</h3><small>+3%</small></div>
+    <div class="card"><span>Productos</span><h3>2,814</h3><small>+9%</small></div>
+    <div class="card"><span>Usuarios</span><h3>5,420</h3><small>+15%</small></div>
+</section>
+
+<!-- GRID -->
+<section class="dashboard-grid">
+
+<div class="chart-box">
+    <h3>Ventas Mensuales</h3>
+    <canvas id="salesChart"></canvas>
+</div>
+
+<div class="side-panel">
+
+    <div class="panel-card">
+        <h4>Meta Mensual</h4>
+        <p>$90,000 / $120,000</p>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width:75%"></div>
+        </div>
+    </div>
+
+    <div class="panel-card">
+        <h4>Actividad Reciente</h4>
+        <p>✔ Nuevo productor aprobado</p>
+        <p>✔ Pedido #10234 enviado</p>
+        <p>✔ Producto agregado</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- TABLE -->
+<section class="table-section">
+<h3>Últimos Pedidos</h3>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Cliente</th>
+<th>Estado</th>
+<th>Método</th>
+<th>Fecha</th>
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#10234</td>
+<td>Juan Pérez</td>
+<td><span class="badge success">Enviado</span></td>
+<td>Tarjeta</td>
+<td>02 Mar 2026</td>
+<td><button>Ver</button></td>
+</tr>
+
+<tr>
+<td>#10235</td>
+<td>María López</td>
+<td><span class="badge pending">Pendiente</span></td>
+<td>Transferencia</td>
+<td>02 Mar 2026</td>
+<td><button>Ver</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
