@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroTech | Marketplace Ganadero</title>
+
+<link rel="stylesheet" href="/css/marketplace.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<div class="logo">AgroTech Marketplace</div>
+
+<nav>
+<a href="/html/index.html">Inicio</a>
+<a href="#">Categorías</a>
+<a href="#">Ofertas</a>
+<a href="#">Vender</a>
+</nav>
+
+<div class="cart-icon" onclick="toggleCart()">
+🛒 <span id="cart-count">0</span>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Productos Profesionales para Ganadería</h1>
+
+<div class="search-container">
+  <div class="search-wrapper">
+    
+    <div class="search-icon">
+      🔍
+    </div>
+
+    <input 
+      type="text" 
+      class="search-input"
+      placeholder="Buscar alimento, vacunas, maquinaria, herramientas..."
+    >
+
+    <button class="search-button">
+      Buscar
+    </button>
+
+  </div>
+</div>
+
+</div>
+</section>
+
+<section class="categories">
+<h2>Categorías</h2>
+<div class="category-grid">
+<div class="category-card">🌾 Alimentos</div>
+<div class="category-card">💉 Veterinaria</div>
+<div class="category-card">🚜 Equipamiento</div>
+<div class="category-card">🧴 Higiene</div>
+<div class="category-card">💧 Sistemas de Agua</div>
+<div class="category-card">⚙ Herramientas</div>
+</div>
+</section>
+
+<section class="products">
+<h2>Productos Destacados</h2>
+<div class="product-grid">
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1581579188871-45ea61f2a31c">
+<div class="product-info">
+<h3>Alimento Balanceado Premium</h3>
+<div class="price">$480 MXN</div>
+<button class="buy-btn" onclick="addToCart('Alimento Balanceado Premium',480)">Agregar al carrito</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b">
+<div class="product-info">
+<h3>Vacuna Bovimax</h3>
+<div class="price">$1,250 MXN</div>
+<button class="buy-btn" onclick="addToCart('Vacuna Bovimax',1250)">Agregar al carrito</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1604186838309-c6715f0d3a16">
+<div class="product-info">
+<h3>Bebedero Automático</h3>
+<div class="price">$2,300 MXN</div>
+<button class="buy-btn" onclick="addToCart('Bebedero Automático',2300)">Agregar al carrito</button>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="ad-section">
+<h2>📢 Publicita tus Productos Aquí</h2>
+<p>Llega a miles de productores en todo México.</p>
+</section>
+
+<footer>
+© 2026 AgroTech - Marketplace Profesional
+</footer>
+
+<!-- CARRITO -->
+<!-- OVERLAY -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+<!-- CART PRO -->
+<div class="cart" id="cart">
+
+  <div class="cart-header">
+    <h2>🛒 Tu Carrito</h2>
+    <button class="cart-close" onclick="toggleCart()">✕</button>
+  </div>
+
+  <div class="cart-body">
+    <ul id="cart-items"></ul>
+  </div>
+
+  <div class="cart-footer">
+
+    <div class="coupon-section">
+      <input type="text" id="couponInput" placeholder="Código de descuento">
+      <button onclick="applyCoupon()">Aplicar</button>
+    </div>
+
+    <div class="cart-summary">
+      <div><span>Subtotal</span><span>$<span id="subtotal">0</span></span></div>
+      <div><span>Envío</span><span>$<span id="shipping">0</span></span></div>
+      <div class="discount-row"><span>Descuento</span><span>-$<span id="discount">0</span></span></div>
+      <div class="total-row"><strong>Total</strong><strong>$<span id="cart-total">0</span> MXN</strong></div>
+    </div>
+
+    <button class="checkout-btn">Finalizar Compra</button>
+
+  </div>
+
+</div>
+
+<script src="/js/marketplace.js"></script>
+</body>
+</html>

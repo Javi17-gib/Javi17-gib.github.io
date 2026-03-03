@@ -1,36 +1,50 @@
+// BOTONES
 const loginBtn = document.getElementById("loginBtn");
 const registerBtn = document.getElementById("registerBtn");
 
+// FORMULARIOS
 const loginForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
 
+// INPUTS LOGIN
+const loginEmail = document.getElementById("loginEmail");
+const loginPassword = document.getElementById("loginPassword");
+
+// INPUTS REGISTRO
+const registerName = document.getElementById("registerName");
+const registerEmail = document.getElementById("registerEmail");
+const registerPassword = document.getElementById("registerPassword");
+
 const rememberMeCheckbox = document.getElementById("rememberMe");
 
-/* Toggle formularios */
-loginBtn.onclick = () => {
+
+// 🔄 TOGGLE ENTRE FORMULARIOS
+loginBtn.addEventListener("click", () => {
     loginBtn.classList.add("active");
     registerBtn.classList.remove("active");
     loginForm.classList.add("active-form");
     registerForm.classList.remove("active-form");
-};
+});
 
-registerBtn.onclick = () => {
+registerBtn.addEventListener("click", () => {
     registerBtn.classList.add("active");
     loginBtn.classList.remove("active");
     registerForm.classList.add("active-form");
     loginForm.classList.remove("active-form");
-};
+});
 
-/* Mostrar password */
-document.querySelectorAll(".toggle-pass").forEach(icon=>{
-    icon.addEventListener("click",()=>{
+
+// 👁 MOSTRAR / OCULTAR PASSWORD
+document.querySelectorAll(".toggle-pass").forEach(icon => {
+    icon.addEventListener("click", () => {
         const input = icon.previousElementSibling;
         input.type = input.type === "password" ? "text" : "password";
     });
 });
 
-/* Registro */
-registerForm.addEventListener("submit",function(e){
+
+// 📝 REGISTRO
+registerForm.addEventListener("submit", function(e){
     e.preventDefault();
 
     const user = {
@@ -40,19 +54,25 @@ registerForm.addEventListener("submit",function(e){
     };
 
     localStorage.setItem("agroUser", JSON.stringify(user));
-    alert("Usuario registrado ✅");
+
+    alert("Usuario registrado correctamente ✅");
+
+    registerForm.reset();
     loginBtn.click();
 });
 
-/* Login */
-loginForm.addEventListener("submit",function(e){
+
+// 🔐 LOGIN
+loginForm.addEventListener("submit", function(e){
     e.preventDefault();
 
     const storedUser = JSON.parse(localStorage.getItem("agroUser"));
 
-    if(storedUser &&
-       storedUser.email === loginEmail.value &&
-       storedUser.password === loginPassword.value){
+    if(
+        storedUser &&
+        storedUser.email === loginEmail.value &&
+        storedUser.password === loginPassword.value
+    ){
 
         const sessionData = {
             name: storedUser.name,
@@ -65,20 +85,25 @@ loginForm.addEventListener("submit",function(e){
             sessionStorage.setItem("agroSession", JSON.stringify(sessionData));
         }
 
-        window.location.href = "index.html";
+        alert("Bienvenido " + storedUser.name + " 🌱");
+
+        window.location.href = "admin.html";
 
     } else {
         alert("Credenciales incorrectas ❌");
     }
 });
 
-/* Auto-login */
-window.addEventListener("load",()=>{
+
+// 🚀 AUTO LOGIN
+window.addEventListener("load", () => {
+
     const session =
         localStorage.getItem("agroSession") ||
         sessionStorage.getItem("agroSession");
 
     if(session){
-        window.location.href = "index.html";
+        window.location.href = "admin.html";
     }
+
 });
